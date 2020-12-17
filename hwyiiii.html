@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>109306023謝怡庭</title>
+</head>
+<body>
+ <script type ="text/javascript">
+  function guess(s){
+   window.prompt(s);
+  }
+  function result(a,b){
+   if(a!=b){
+    value = window.prompt("enter the integer again!")
+   }
+   else{
+    alert("correct number!");
+   }
+  }
+  var input;
+  input = guess("Please guess a number from 1 to 10:");
+  var value = parseInt(input);
+  var rand = Math.floor((Math.random()*10)+1);
+
+  while(value!=rand){
+   result(value,rand);
+  }
+  result(value,rand);
+
+
+
+ </script>
+
+</body>
+</html>
